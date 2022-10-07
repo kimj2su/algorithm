@@ -7,6 +7,7 @@ class Main {
 
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
+                //0번째 인덱스와 1번째 인덱스를 비교하여 만약 1번째가 크면 자리를 바꾼다 -> 반복
                 if (arr[j] < arr[j + 1]) {
                     int tmp = arr[j];
                     arr[j] = arr[j+1];
