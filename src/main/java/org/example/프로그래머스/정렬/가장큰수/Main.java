@@ -18,6 +18,11 @@ class Main {
         Arrays.sort(str, new Comparator<String>() {
             @Override
             public int compare(String a, String b) {
+                System.out.println("a = " + a);
+                System.out.println("b = " + b);
+                System.out.println("b+a = " + b + a);
+                System.out.println("a+b = " + a+b);
+                System.out.println("(b+a).compareTo(a+b): "+ (b+a).compareTo(a+b));
                 return (b+a).compareTo(a+b);
                 //오름차순 정렬 (o1+o2).compareTo(o1+o2);
             }
@@ -34,7 +39,7 @@ class Main {
     }
     public static void main(String[] args) {
         Main main = new Main();
-        int[] arr = {6, 10, 2};
+        int[] arr = {3, 30, 34, 5, 9};
         System.out.println(main.solution(arr));
     }
 }
